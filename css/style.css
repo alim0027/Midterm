@@ -1,0 +1,835 @@
+/* Base styles for mobile devices (default) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000; 
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+.logo{
+    padding-top: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000; 
+}
+
+.nav-list li {
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.cover {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white; 
+    height:max-content; 
+    overflow: hidden; 
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1; 
+   
+}
+
+.cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 1; 
+    padding: 3rem;
+}
+
+.cover h1,
+.cover p,
+input {
+    position: relative;
+    z-index: 1; 
+    margin-top: 1rem;
+} 
+ .cover h1{
+    margin-top: 8rem ;
+    font-family: "Karla", sans-serif; 
+    font-size:45px;
+    font-weight:900;
+
+ }
+ .cover p{
+    font-family: "Karla", sans-serif; 
+    font-size:24px;
+    margin: 1rem;
+ }
+
+input {
+    padding: 1rem;
+    width: 60%;
+    max-width: 300px;
+    color: #000;
+    background-color: white; 
+    border: none; 
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-weight:800;
+    font-size:20px;
+    margin-bottom: 5rem;
+}
+::placeholder {
+    color:#000; 
+}
+
+.cover .button{
+    margin-top: 40px;
+}
+
+.main-page {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f3f0e9;
+    font-size: 25px;
+    
+    
+}
+
+.pictures p{
+    color: #d69e3d;
+    font-weight: 540;
+    text-align: left;
+    margin-left: -2rem;
+}
+.pictures h2{
+    font-size: 40px;
+    color:#242424 ;
+    margin-right: -1rem;
+   
+}
+.pictures-container .latte{
+    width: 100%;
+}
+.coffees {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 2rem; 
+    width: 92vw; 
+    margin:1.5rem auto; 
+}
+
+.coffees img {
+    width: 100%; 
+    height: auto;
+}
+
+.why p{
+    text-align: center;
+    color: #d69e3d;
+    font-weight: 540;
+    padding-top: 6rem;
+}
+.why h1{
+    color: #2e2e2e;
+    text-align: center;
+    font-size:40px;
+
+}
+.offers h2{
+    font-size: 40px;
+    color:#2e2e2e ;
+    text-align: center;
+}
+
+.offers p{
+    text-align: center;
+    color: #2e2e2e;
+    font-family: "Karla", sans-serif;
+    font-size: 19px;
+    margin: 0 0.5rem;
+    font-weight: 600;
+    padding-bottom: 6rem;
+}
+
+
+
+.offers img{
+    width: 40vw;
+    margin: auto 12rem;
+}
+
+.menu {
+    position: relative;
+    background-image: url('images/coffee-shop-square-480.jpeg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.menu h2 , p , input {
+    position: relative;
+    z-index: 1;
+    padding: 2rem; 
+}
+
+.menu h2 {
+    font-size: 35px; 
+    margin-top: -4rem; 
+    
+}
+
+.menu p {
+    font-size: 20px;
+    margin-bottom: 1rem; 
+    color: #d69e3d;
+}
+
+.button1 input{
+    padding: 1rem; 
+    width: 60%; 
+    max-width: 250px; 
+    font-size: 18px; 
+    font-weight:800 ;
+    border: none;
+    color: #000; 
+    margin: -1rem ;
+}
+
+
+
+.button2 input{
+    padding: 1rem;
+    width: 100%; 
+    max-width: 250px; 
+    font-size: 20px;
+    font-weight:800 ;
+    border: 3px solid  #ffffff;
+    margin: -1rem ;
+    background-color: transparent;
+    margin-bottom: 10rem;
+}
+.button2 ::placeholder{
+    color:#ffffff;
+}
+
+.menu img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    margin-top: -3rem;
+    margin-left: -18rem;
+
+    z-index: 0;    
+}
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 109%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+    margin-top: -3rem;
+    margin-left: -18rem;
+    margin-bottom: 5rem;
+}
+
+.about-us {
+    background-color: #f3f0e9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   margin-left: -2.5rem;
+}
+
+.about-us .text-content {
+    width: 100%;
+    margin-top: 40rem;
+}
+
+.about-us h3,
+.about-us h1,
+.about-us p,
+.about-us form {
+    margin: 0 0 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    color: #d69e3d;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-left: -2rem;
+}
+
+.about-us form {
+    display: flex;
+    width: 100%;
+}
+
+.about-us input {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    border:none;
+    background-color: #000000;
+}
+.about-us ::placeholder{
+    color: #ffffff;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90rem;
+    background-color: #000;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center; 
+    width: 100%; 
+    max-width: 300px; 
+}
+.reviews p{
+    color:#d69e3d;
+    margin-top: 5rem;
+
+}
+.reviews h2{
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-top: 15rem;
+}
+
+.testimonial img {
+    width: 160%; 
+    margin-left: -1px;
+}
+
+.testimonial::after {
+    content: "";
+    position: absolute;
+    left: -6rem;
+    width: 165%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+   
+}
+
+.testimonial p, .testimonial h3 {
+    position: absolute;
+    color: white;
+    z-index: 1; 
+    width: 100%;
+    
+}
+
+.testimonial p {
+    bottom: 2rem; 
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 2rem;
+    margin-left:-8rem ;
+}
+
+.testimonial h3 {
+    bottom: 0.5rem; 
+    font-size: 18px;
+    text-align: left;
+    margin-left:1rem ;
+    color:#d69e3d;
+    margin-left:-8rem ;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #000000;
+    color: white;
+}
+.horizontal-line {
+    border: none;            
+    height: 2px;            
+    background-color: #494949; 
+    margin: 20px 0;       
+}
+
+
+/* Tablet styles */
+@media (min-width: 600px) {
+    .header {
+        display: flex;
+        justify-content: end;
+        gap: 28rem;
+    }
+    .header .logo{
+       display: flex;
+       justify-content:flex-start;
+    }
+
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .pictures-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        grid-template-areas:
+    "one one two three"
+    "one one four five";
+        gap: 5rem;
+        
+    }
+    .pictures-container .latte:nth-child(1){
+        grid-area: one;
+        
+      }
+      .pictures-container .beans:nth-child(2){
+        grid-area: two;
+       
+      }
+      .pictures-container .pouring:nth-child(3){
+        grid-area: three;
+        
+      }
+      .pictures-container .cups:nth-child(4){
+        grid-area: four;
+        
+      }
+      .pictures-container .employee:nth-child(5){
+        grid-area: five;
+        
+      }
+
+    .pictures-container .beans {
+        width: 52%; 
+        height: auto; 
+        margin-top: -2.5rem;
+        margin-left: -4rem;
+        
+         
+    }
+    .pictures-container .pouring{
+        width: 52%; 
+        height: auto; 
+        margin-top: -2.5rem;
+        margin-left: -22rem;
+        
+
+    }
+    .pictures-container .cups {
+        width: 52%; 
+        height: auto; 
+        margin-top: 1rem;
+        margin-left: -4rem;
+        
+         
+    }
+    .pictures-container .employee {
+        width: 52%;
+        height: auto; 
+        margin-top: 1rem;
+        margin-left: -22rem;
+    
+         
+    }
+    .pictures-container .latte{
+        margin-left: 0.1rem;
+        width: 50vw ;
+        height: auto;
+        margin-top: -1rem;
+        
+    }
+
+    .text p {
+        margin-top: 10rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .text h2 {
+        font-size:4rem ;
+    }
+
+    .why p{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: -40rem;
+    }
+    .why h1{
+        font-size:4rem ;
+    }
+    
+    .offers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto auto; 
+        gap:.5rem; 
+        width: 100% 
+    }
+    .offers img{
+        width: 50%;
+        height: auto; 
+        margin-left: 14rem;
+    }
+    .offers img:nth-child(1) {
+        grid-column: span 1; /* fair-trade */
+
+    }
+
+    .offers img:nth-child(2) {
+        grid-column: span 1; /* local-goods */
+    }
+
+    .offers img:nth-child(3) {
+        grid-column: span 2; /* made-with-love */
+    }
+    .offers h2{
+        font-size: 2rem;
+    }
+    .offers .fair img{
+        margin-left: 12rem;
+        width: 30%;
+
+    }
+    .offers .fair h2{
+        margin-left: -9rem;
+    }
+    .offers .fair p{
+        margin-left: -2rem;
+        font-size: 18px;
+
+    }
+    .offers .goods img{
+        margin-left: 2rem;
+        width: 100%;
+
+    }
+    .offers .goods h2{
+        margin-left:-7rem ;
+
+    }
+    .offers .goods p{
+        margin-left: -3rem;
+        font-size: 18px;
+    }
+    .offers .love img{
+        margin-left: 35rem;
+        width: 30%;
+
+    }
+    .offers .love h2{
+        margin-left: 29rem;
+
+    }
+    .offers .love p{
+        margin-left: 18rem;
+
+    }
+    
+    .menu img {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin-top: -3rem;
+        margin-left: -40rem;
+    
+        z-index: 0;    
+    }
+    .menu::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.7); 
+        z-index: 1;
+        margin-top: -3rem;
+        margin-left: -40rem;
+        margin-bottom: 5rem;
+    }
+    .menu h2{
+        font-size: 30px;
+    }
+    .menu p{
+        font-size: 14px; ;
+    }
+    .about-us{
+        display: flex;
+    }
+    .about-us img{
+        width: 50vw;
+        margin-left: -1rem;
+        margin-top: 3rem;
+    }
+    .about-us h3{
+        margin-left:40rem;
+        margin-top: -30rem;
+    }
+    .about-us h1{
+        margin-left: 40rem;
+    }
+    .about-us p{
+        margin-left: 38rem;
+    }
+    .about-us input{
+        margin-left: 40rem;
+    }
+
+
+
+.testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 1rem;
+        background-color: #000;
+        margin-left: 1rem;
+    }
+
+    .testimonials img {
+        width: 100%;
+        margin-left: -50rem;
+    }
+    .testimonials::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        margin-top: -15rem;
+       
+    }
+    .testimonials p{
+        margin-left: -50rem;
+        font-size: 14px;
+    }
+    .testimonials h3{
+        margin-left: -50rem;
+    }
+    
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        gap: 28rem;
+        margin-right:-1rem;
+    }
+    .header .logo{
+       display: flex;
+       justify-content:flex-start;
+    }
+
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .cover {
+        padding: 4rem;
+    }
+
+    .cover h1 {
+        font-size: 2.5rem;
+    }
+
+    .cover p {
+        font-size: 1.25rem;
+    }
+
+    
+
+    .cover img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        
+    }
+    .about-us img{
+        width: 40vw;
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    .about-us h3{
+        margin-left:43rem;
+        margin-top: -30rem;
+    }
+    .about-us h1{
+        margin-left: 43rem;
+    }
+    .about-us p{
+        margin-left: 41rem;
+    }
+    .about-us input{
+        margin-left: 43rem;
+    }
+    .offers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto auto; 
+        gap:.5rem; 
+        width: 100% 
+    }
+    .offers img{
+        width: 50%;
+        height: auto; 
+        margin-left: 14rem;
+    }
+    .offers img:nth-child(1) {
+        grid-column: span 1; /* fair-trade */
+
+    }
+
+    .offers img:nth-child(2) {
+        grid-column: span 1; /* local-goods */
+    }
+
+    .offers img:nth-child(3) {
+        grid-column: span 2; /* made-with-love */
+    }
+    .offers h2{
+        font-size: 2rem;
+    }
+    .offers .fair img{
+        margin-left: 13rem;
+        width: 30%;
+
+    }
+    .offers .fair h2{
+        margin-left: -5rem;
+    }
+    .offers .fair p{
+        margin-left: -2rem;
+        font-size: 18px;
+
+    }
+    .offers .goods img{
+        margin-left: 15rem;
+        width: 30%;
+
+    }
+    .offers .goods h2{
+        margin-left:-2rem ;
+
+    }
+    .offers .goods p{
+        margin-left: -3rem;
+        font-size: 18px;
+    }
+    .offers .love img{
+        margin-left: 42rem;
+        width: 30%;
+
+    }
+    .offers .love h2{
+        margin-left: 36rem;
+
+    }
+    .offers .love p{
+        margin-left: 25rem;
+
+    }
+    .about-us{
+        display: flex;
+    }
+    .about-us img{
+        width: 40vw;
+        margin-left: 10rem;
+        margin-top: 10rem;
+    }
+    .about-us h3{
+        margin-left:54rem;
+        margin-top: -20rem;
+    }
+    .about-us h1{
+        margin-left: 54rem;
+    }
+    .about-us p{
+        margin-left: 52rem;
+    }
+    .about-us input{
+        margin-left: 54rem;
+    }
+    .testimonials{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    height: 857px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 17px;
+    color: #fff;
+    font-family: Lato;
+   }
+
+
+   
+}
